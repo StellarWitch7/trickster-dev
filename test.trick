@@ -1,0 +1,7 @@
+$root: void = $target, $mov_vec -> Impulse Ploy
+
+$target: player = Reflection Delusion
+
+$mov_vec: vector = $look_vec, 2.0, 2.0 -> Domination Stratagem
+
+$look_vec: vector = $target -> Directional Distortion

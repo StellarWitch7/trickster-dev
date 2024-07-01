@@ -1,0 +1,40 @@
+{
+  "name": "trickster-dev",
+  "displayName": "Trickster Dev",
+  "description": "VS Code support for the Minecraft Trickster mod's language.",
+  "repository": "https://github.com/StellarWitch7/trickster-dev",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "trick",
+        "aliases": [
+          "Trickster",
+          "trickster",
+          "trick"
+        ],
+        "extensions": [
+          "trick"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "trick",
+        "scopeName": "source.trick",
+        "path": "./syntaxes/trick.tmLanguage.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.22.0",
+    "vsce": "^2.15.0"
+  }
+}
