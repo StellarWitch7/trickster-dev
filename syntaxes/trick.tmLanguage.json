@@ -31,6 +31,10 @@
 		"keywords": {
 			"patterns": [
 				{
+					"name": "keyword.control.trick",
+					"match": "!root\\b"
+				},
+				{
 					"name": "keyword.operator.trick",
 					"match": "\\b(as)\\b"
 				}

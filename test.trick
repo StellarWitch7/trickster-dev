@@ -1,4 +1,8 @@
-$root: void = $action -> Grand Stratagem
+# impersonation spell
+# when crouched, pulls from the crow mind and attempts to polymorph the caster to the returned value
+# if not crouched, gets the entity the caster is looking at and stores it in the crow mind!root = $action -> Grand Stratagem
+
+!root = $action -> Grand Stratagem
 
 $self: entity = Reflection Delusion
 
