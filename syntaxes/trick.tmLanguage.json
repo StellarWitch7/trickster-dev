@@ -6,6 +6,9 @@
 			"include": "#comments"
 		},
 		{
+			"include": "#keywords"
+		},
+		{
 			"include": "#constants"
 		},
 		{
@@ -25,6 +28,14 @@
 				}
 			]
 		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.operator.trick",
+					"match": "\\b(as)\\b"
+				}
+			]
+		},
 		"constants": {
 			"patterns": [
 				{
@@ -37,7 +48,7 @@
 			"patterns": [
 				{
 					"name": "support.type.trick",
-					"match": "\\b(void|player|vector|number|entity)\\b"
+					"match": "\\b(any|void|spell|vector|number|entity)\\b"
 				}
 			]
 		},

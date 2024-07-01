@@ -1,7 +1,15 @@
-$root: void = $target, $mov_vec -> Impulse Ploy
+$root: void = $action -> Grand Stratagem
 
-$target: player = Reflection Delusion
+$self: entity = Reflection Delusion
 
-$mov_vec: vector = $look_vec, 2.0, 2.0 -> Domination Stratagem
+$action: spell = $is_crouching, $activate, $store -> Decision Distortion
 
-$look_vec: vector = $target -> Directional Distortion
+$is_crouching: number = $self -> Alternative Distortion
+
+$activate: spell = ($self, $from_mind -> Polymorph Ploy) as spell
+
+$from_mind: any = Crow Mind Delusion
+
+$store: spell = ($target -> Crow Mind Ploy) as spell
+
+$target: entity = $self -> Archer's Distortion
