@@ -1,19 +1,14 @@
-# impersonation spell
-# when crouched, pulls from the crow mind and attempts to polymorph the caster to the returned value
-# if not crouched, gets the entity the caster is looking at and stores it in the crow mind!root = $action -> Grand Stratagem
+(): any {
+    let cast_offhand = (arg: spell or void): any {
+        if arg
+        then (arg: spell): any {
+            arg
+            |> Grand Stratagem()
+        }
+        else (): void { }
+        |> Grand Stratagem(arg)
+    }
 
-!root = $action -> Grand Stratagem
-
-$self: entity = Reflection Delusion
-
-$action: spell = $is_crouching, $activate, $store -> Decision Distortion
-
-$is_crouching: number = $self -> Alternative Distortion
-
-$activate: spell = ($self, $from_mind -> Polymorph Ploy) as spell
-
-$from_mind: any = Crow Mind Delusion
-
-$store: spell = ($target -> Crow Mind Ploy) as spell
-
-$target: entity = $self -> Archer's Distortion
+    Notulist's Delusion()
+    |> cast_offhand()
+}

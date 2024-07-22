@@ -32,11 +32,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.trick",
-					"match": "!root\\b"
-				},
-				{
-					"name": "keyword.operator.trick",
-					"match": "\\b(as)\\b"
+					"match": "(?=\\b)(if|then|else|let|or|and)(?=\\b)"
 				}
 			]
 		},
@@ -44,7 +40,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.trick",
-					"match": "\\b[0-9]+\\.?[0-9]*"
+					"match": "(?=\\b)[0-9]+\\.?[0-9]*(?=\\b)"
 				}
 			]
 		},
@@ -52,15 +48,19 @@
 			"patterns": [
 				{
 					"name": "support.type.trick",
-					"match": "\\b(any|void|spell|vector|number|entity)\\b"
+					"match": "(?=\\b)(any|void|vector|number|entity|slot|block|type|spell)(?=\\b)"
 				}
 			]
 		},
 		"variables": {
 			"patterns": [
 				{
+					"name": "support.function.trick",
+					"match": "(?=\\b)([A-Za-z][A-Za-z_' ]+)(?=\\()"
+				},
+				{
 					"name": "variable.name.trick",
-					"match": "\\$[A-Za-z0-9_]+\\b"
+					"match": "(?=\\b)([A-Za-z][A-Za-z_' ]+)(?=\\b)"
 				}
 			]
 		}
